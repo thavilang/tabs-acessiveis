@@ -1,0 +1,47 @@
+[js-btn-bloco] {
+  cursor: pointer;
+}
+
+[js-bloco] {
+  display: none;
+}
+
+[js-bloco-ativo="1"] [js-bloco="1"] {
+  display: block;
+}
+
+[js-bloco-ativo="2"] [js-bloco="2"] {
+  display: block;
+}
+
+[js-bloco-ativo="3"] [js-bloco="3"] {
+  display: block;
+}
+
+[js-bloco-ativo="4"] [js-bloco="4"] {
+  display: block;
+}
+
+[js-bloco-ativo="5"] [js-bloco="5"] {
+  display: block;
+}
+
+[js-bloco-ativo="6"] [js-bloco="6"] {
+  display: block;
+}
+
+[js-bloco-ativo="7"] [js-bloco="7"] {
+  display: block;
+}
+
+[js-bloco-ativo="8"] [js-bloco="8"] {
+  display: block;
+}
+
+[js-bloco-ativo="9"] [js-bloco="9"] {
+  display: block;
+}
+
+[js-bloco-ativo="10"] [js-bloco="10"] {
+  display: block;
+}/*# sourceMappingURL=style.css.map */

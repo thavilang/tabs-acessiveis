@@ -1,0 +1,13 @@
+[js-btn-bloco]{
+    cursor: pointer;
+}
+
+[js-bloco] {
+    display: none;
+}
+
+@for $i from 1 through 10 {
+    [js-bloco-ativo="#{$i}"] [js-bloco="#{$i}"] {
+        display: block;
+    }
+}

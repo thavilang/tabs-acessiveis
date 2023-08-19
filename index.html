@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs Acessíveis</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        [js-bloco-ativo] {
+            border: 1px currentColor solid;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: 0 auto 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exemplos de uso</h1>
+    <div js-bloco-ativo="1">
+        <div js-bloco-navegacao>
+            <button js-btn-bloco="1">Aba 1</button><button js-btn-bloco="2">Aba 2</button>
+        </div>
+        <div js-bloco="1">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat illo optio alias earum numquam
+                iusto nam consequatur reiciendis molestias unde, omnis sed modi magnam minus esse voluptates molestiae
+                rerum velit.</p>
+        </div>
+        <div js-bloco="2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quam numquam veritatis consectetur. At
+                est magni ipsa provident sed consectetur, iure assumenda tempora doloribus saepe aut, fugiat velit
+                impedit laudantium?</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
