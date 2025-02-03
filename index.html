@@ -8,8 +8,17 @@
     <title>Tabs Acessíveis</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        h1 {
+        h1, h2 {
             text-align: center;
+        }
+
+        label, input{
+            display: block;
+            width: 100%;
+        }
+        
+        input{
+            margin-bottom: 15px;
         }
 
         [js-bloco-ativo] {
@@ -19,11 +28,29 @@
             max-width: 500px;
             margin: 0 auto 10px;
         }
+
+        .sessoes{
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .sessoes > div{
+            font-weight: 700;
+            text-transform: uppercase;
+            background-color: #fff;
+            color: #747474;
+        }
+
+        .sessoes > div.ativo{
+            color: #000;
+        }
     </style>
 </head>
 
 <body>
     <h1>Exemplos de uso</h1>
+    <h2>Navegação por aba</h2>
     <div js-bloco-ativo="1">
         <div js-bloco-navegacao>
             <button js-btn-bloco="1">Aba 1</button><button js-btn-bloco="2">Aba 2</button>
@@ -38,6 +65,39 @@
                 est magni ipsa provident sed consectetur, iure assumenda tempora doloribus saepe aut, fugiat velit
                 impedit laudantium?</p>
         </div>
+    </div>
+    <h2>Navegação por sessão</h2>
+    <div js-bloco-ativo="1">
+        <div class="sessoes">
+            <div js-bloco="1" js-tabs-always-show><h3>1 - First</h3></div>
+            <div js-bloco="2" js-tabs-always-show><h3>2 - Finish</h3></div>
+        </div>
+        <form action="#">
+            <div js-bloco="1">
+                <label for="input-1">Your Input 1</label>
+                <input type="text" name="input-1" placeholder="Input 1">
+
+                <label for="input-2">Your Input 2</label>
+                <input type="text" name="input-2" placeholder="Input 2">
+
+                <label for="input-3">Your Input 3</label>
+                <input type="text" name="input-3" placeholder="Input 3">
+
+                <button js-btn-bloco="2">Next ></button>
+            </div>
+            <div js-bloco="2">
+                <label for="input-4">Your Input 4</label>
+                <input type="text" name="input-4" placeholder="Input 4">
+
+                <label for="input-5">Your Input 5</label>
+                <input type="text" name="input-5" placeholder="Input 5">
+
+                <label for="input-6">Your Input 6</label>
+                <input type="text" name="input-6" placeholder="Input 6">
+
+                <button js-btn-bloco="1">< Back</button> <button type="submit">Your send button</button>
+            </div>
+        </form>
     </div>
     <script src="script.js"></script>
 </body>

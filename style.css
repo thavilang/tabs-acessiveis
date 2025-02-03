@@ -2,7 +2,7 @@
   cursor: pointer;
 }
 
-[js-bloco] {
+[js-bloco]:not([js-tabs-always-show]) {
   display: none;
 }
 
